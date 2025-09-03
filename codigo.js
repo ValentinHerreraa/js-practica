@@ -46,21 +46,97 @@ amigos = saludo + pregunta;
 
 //FORZAR UN STRING: ponemos al principio unas comillas ya que todo lo toma como un string
 let uno = 1;
-let dos = 2;
+let dos = 2; 
 
-frase = "" + uno + dos
-alert(frase)
+//frase = "" + uno + dos;
+//alert(frase);
 
 //CONCAT: solo sirve para las cadenas de texto.
- let hola = "que haces capo "
- let chau = "nos vemos crack"
+ let hola = "que haces capo ";
+ let chau = "nos vemos crack";
 
- esoo = hola.concat(chau)
+ esoo = hola.concat(chau);
 
- alert(esoo)
+ //alert(esoo);
 
- //${}
- let nombree = "lucas dalto"
+ //${}: esta forma funciona ya poniendo una variable con algo guardado y aprovechando el uso de backticks
+ let nombree = "lucas dalto";
 
- let frases = `soy ${nombree} y estoy caminando`
- alert (frases)
+ let frases = `soy ${nombree} y estoy caminando`;
+ //alert (frases);
+
+ //OPERADORES DE COMPARACION: compara dos exoresiones y devuelven un valor booleano. (==, ===, !=, !==, >,<, >=, <=)
+ let comparar = 23;
+ let comparar2 = 13;
+ let texto = "texto 1";
+ let texto2 = "texto 2";
+ let texto3 = "23";
+
+ let result = comparar !== texto3;
+
+ //document.write(result);
+
+ //OPERADORES LOGICOS: nos devuelven un valor a partir de que se cumpla (o no) una condicion, sus resultado es booleano. (&&, ||, !)
+ let operador = 23;
+ let operador2 = 34;
+
+ let operacion = operador < operador2;
+ let operacion2 = operador2 < operador;
+
+ //document.write(!operacion);
+
+ //CONDICIONALES (if, else if, else)
+ let edad1 = 18;
+ let edad2 = 17;
+
+ /*let ingreso = prompt("ingresa tu edad")
+    if(ingreso >= 18){
+        alert(`tenes ${ingreso}, podes ingresar al boliche`);
+    } else if(ingreso < 18){
+         ("No podes ingresar, volvete a tu casa");
+    };*/
+ //HISTORIA DE COFLA 1
+ //apertura capitulo numero 2.
+
+ //ARRAYS
+ let frutas = ["banana", "manzana", "pera"];
+ //alert(frutas[1]);
+
+ //ARRAYS ASOCIATIVO
+ let pc1 = {
+    nombrepc: "pc",
+    procesador: "intel core i7",
+    ram: "16gb",
+    espacio: "1tb"
+};
+/*alert(pc1["nombrepc"]);
+
+let nombrepc = pc1["nombrepc"];
+let procesador = pc1["procesador"];
+let ram = pc1["ram"]
+let espacio = pc1["espacio"]
+
+let frase = `El nombre de tu pc es: ${nombrepc}<br>
+             El procesador es: ${procesador}<br>
+             La ram es de: ${ram}<br>
+             Tu espacio es de: ${espacio}`
+document.write(frase)*/
+
+//BUCLES E ITERACION
+numberwhile = 1
+while (numberwhile <= 10){
+
+    numberwhile++;
+}
+document.write(numberwhile)
+
+
+
+    
+
+
+
+
+
+ 
+ 
