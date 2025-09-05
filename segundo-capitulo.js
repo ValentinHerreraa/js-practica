@@ -132,10 +132,10 @@ document.write("<br>")
     }
   }
 let mayor = hello()
-alert(mayor)
+//alert(mayor)
 
 //parametros
-function suma(num1, num2){
+/*function suma(num1, num2){
    let result = num1 + num2
    return result
 }
@@ -145,13 +145,14 @@ function saludo (nombre){
     let frase = `hola ${nombre}! como estas?`
     alert (frase)
 }
-saludo("pedro")
+saludo("pedro")*/
 
 //scope: el scope de las funciones es regional, variable que va dentro solo funciona para dentro de esa funcion y no la podemos utilizar en otra parte del codigo.
 
 //funciones flecha
-const saludar = nombre =>{
+/*const saludar = nombre =>{
     document.write("hola como estas?" + nombre)
 }
-saludar("valen")
+saludar("valen")*/
 
+//HISTORIA DE COFLA 2
