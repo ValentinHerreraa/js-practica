@@ -104,7 +104,7 @@ const supermercado = () =>{
 }
 supermercado()*/
 
-let asientos = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+/*let asientos = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 let ingreso = parseInt(prompt("Ingrese un numero del 1 al 10 para reservar un asiento: "))
 
@@ -124,11 +124,50 @@ const cine = () => {
             }
         }
  }
- cine()
+ cine()*/
 
+ //entrada a boliche
+/*let free = false
+const validarCliente = (time) => {
+    let edad = prompt("Cual es tu edad?")
+    if(edad >= 18){
+        if(time >= 2 && time < 7 && free == false ){
+            alert("Podes pasar gratis")
+            free = true
+        } else{
+            alert("Podes pasar pero tenes que pagar la entrada")
+        }
+    } else{
+            alert("Sos menos de edad, no podes pasar.")
+    } 
+}
+validarCliente(3)
+validarCliente(1)
+validarCliente(1.5)
+validarCliente(2)
+validarCliente(2.5)
+validarCliente(4)
+validarCliente(4.3)*/
 
+//ejercicios con for, while y do while
 
+//PRACTICAR BUCLES
+/*let personas = ["valen", "lucio", "maria", "angel"]
+for(persona of personas){
+    alert(persona)
+}*/
 
+/*let numeros = [2, 3, 67, 22, 12]
+let total = 0
+function suma (){
+    for (numero of numeros){
+        result = total += numero
+    }
+    if(result > 0){
+        alert(result)
+    }
+}
+suma()*/
 
 
 
