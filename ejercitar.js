@@ -169,8 +169,69 @@ function suma (){
 }
 suma()*/
 
+//for
+/*let nuemerosVarios = [10, 2, 13, 3, 1]
+let total = 0
+
+for(i = 0; i < nuemerosVarios.length; i++){
+   sumaTotal = total += nuemerosVarios[i]
+}
+alert("la suma de los nuemeros es : " + sumaTotal)*/
+
+/*let nombresVarios = ["ana", "luis", "sergio", "juan"]
+
+for(i = 0; i < nombresVarios.length; i++){
+    alert(`posicion ${i} : ${nombresVarios[i]}`)
+}*/
 
 
+
+//for in
+/*let materias = ["pan", "leche", "huevos" ]
+for(materia in materias){
+    alert(`producto ${materia} : ${materias[materia]} `)
+}*/
+
+
+/*let monedas = [100, 200, 300]
+for(moneda of monedas){
+    alert(`Preico : ${moneda}`);
+};*/
+
+//registro de ventas x2
+/*let vendidos = [120, 340, 500, 230, 90]
+let presion = parseInt(prompt("Presiona 1 para ver el total"))
+
+let total = 0
+const registro = () => {
+    for(vendido of vendidos){
+        sumaFinal = total += vendido
+    }
+    if(presion === 1){
+        alert(sumaFinal) 
+    } else{
+        alert("Numero ingresado incorrecto")
+    }
+    superar = parseInt(prompt("Presione 2 para ver los productos que superan los 200: "))
+    if(superar === 2){
+        for(vendido of vendidos){
+            if(vendidos >= 200){
+                alert(`los que superan los 200 : ${vendido} `)
+            }
+            alert(vendido)
+        }
+    }
+}
+registro()*/
+
+//nota alumnos x2
+let varios = [];
+for(let i = 0; i < varios.length; i++){
+    verNotas = prompt("Quiero agregar 3 nombres: ")
+    if(verNotas === ""){
+        alert(varios.push[verNotas])
+    }
+}
 
 
 
