@@ -127,13 +127,14 @@ const cine = () => {
  cine()*/
 
  //entrada a boliche
-/*let free = false
-const validarCliente = (time) => {
+/*let free = true
+
+const validarCliente = (time)=>{
     let edad = prompt("Cual es tu edad?")
     if(edad >= 18){
-        if(time >= 2 && time < 7 && free == false ){
+        if(time >= 2 && time < 7 && free === true ){
             alert("Podes pasar gratis")
-            free = true
+            free = false
         } else{
             alert("Podes pasar pero tenes que pagar la entrada")
         }
@@ -225,13 +226,40 @@ const registro = () => {
 registro()*/
 
 //nota alumnos x2
-let varios = [];
-for(let i = 0; i < varios.length; i++){
-    verNotas = prompt("Quiero agregar 3 nombres: ")
-    if(verNotas === ""){
-        alert(varios.push[verNotas])
+/*let pelotas = ["ana", "luis", "pedro", "juan", "sofia"];
+let escolares = [8, 5, 7, 10, 6];
+
+let profesora = parseInt(prompt("Ingresar 1 para ver la nota de los alumnos o 2 para ver el promedio final"));
+
+
+
+function notasDeAlumnos (total){
+    if(profesora === 1){
+        for(let i = 0; i < pelotas.length && escolares.length; i++ ){
+            alert(`Las notas de los alumnos son: ${pelotas[i]} ${escolares[i]}`)
+        }
+    } 
+    if(profesora === 2){
+        for(let i = 0; i < escolares.length; i++){
+            promedioSemiFinal = total += escolares[i]
+            promedioFinal = promedioSemiFinal / 5 
+        }
+        alert(`El promedio total de los alumnos es: ${promedioFinal}`);
+    }
+};
+notasDeAlumnos(0)*/
+
+let harinas = ["pan", "leche", "queso", "huevos"];
+let pedir = prompt("Que quieres llevar?")
+
+const panaderia = () => {
+    for(i = 0; i < harinas.length; i++){
+        if(pedir === harinas[i]){
+            for(harina in harinas){
+            }
+            alert(`${harina}: producto disponible ${harinas[i]}`)
+            break;
+        }
     }
 }
-
-
-
+panaderia()
