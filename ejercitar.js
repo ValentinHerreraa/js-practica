@@ -249,7 +249,7 @@ function notasDeAlumnos (total){
 };
 notasDeAlumnos(0)*/
 
-let harinas = ["pan", "leche", "queso", "huevos"];
+/*let harinas = ["pan", "leche", "queso", "huevos"];
 let pedir = prompt("Que quieres llevar?")
 
 const panaderia = () => {
@@ -262,4 +262,177 @@ const panaderia = () => {
         }
     }
 }
-panaderia()
+panaderia()*/
+
+//notas func
+/*let valores = [7, 10, 10, 7];
+
+calcular =prompt("Escriba un nombre y le pondremos el promedio de esa persona: ")
+
+function calcularPromedio (total){
+    for(let i = 0; i < valores.length; i++){
+        promedio = total += valores[i]
+        promedioFinal = promedio / 4
+    }
+    if(calcular === "Valentin" ){
+        if(promedioFinal >= 7){
+            alert(`${calcular} tu promedio es ${promedioFinal} y estas aprobado/a.`)
+        }
+    } else{
+        alert(`${calcular} tu promedio es ${promedioFinal} y estas aprobado/a.`)
+    }
+}
+calcularPromedio(0)*/
+
+//lista compras
+/*let vacios = [];
+let cantidad = 3;
+
+
+const agregarProducto = () =>{
+
+    for(i = 0; i < cantidad; i++){
+        agregar = prompt("Ingresa los productos y mostraremos por pantalla: ")
+        agregarFinal = vacios.push(agregar)
+        alert(`${agregarFinal}: ${agregar}`)
+    }
+}
+agregarProducto()*/
+
+//registrar ventas
+/*let platas = [120, 340, 543, 210, 90]
+
+const calcularTotal = (total) => {
+    for(i = 0; i < platas.length; i++){
+        semi = total += platas[i]
+    }
+    alert(semi)
+}
+calcularTotal(0)
+
+const ventasMayores = () => {
+    for(plata of platas){
+        if(plata > 100){
+            alert("Mayor a 100: " + plata)
+        }
+    }
+}
+ventasMayores()*/
+
+/*let cosas = ["ana", "luis", "lucio", "valen", "angel", "maria", "martina"];
+
+buscarNombres = prompt("Busca el nombre que desees: ");
+
+const buscar = () => {
+    for(i = 0; i < cosas.length; i++){
+        if(cosas[i] === buscarNombres){
+        alert(`Encontrado en la posicion ${i}`)
+        }
+}
+
+}
+buscar()*/
+
+//acceso al club
+/*let acceso = [];
+let cantidad = 3;
+ingreso = prompt("Ingresa 3 nombres: ");
+
+function club (){
+    for(i = 0; i < cantidad; i++){
+        dato = acceso.push(ingreso)
+        usuario = prompt("Ingresa tu nombre: ")
+        if(usuario === ingreso){
+            alert(`${ingreso} estas en la lista.`)
+        }
+    }
+}
+club()*/
+
+//carrito de compras
+/*let preciosVariados = [120, 850, 230, 600, 180];
+
+function sumaMenoresAX (total){
+    for(i = 0; i < preciosVariados.length; i++){
+        suma = total += preciosVariados[i] <= 500
+        alert(suma)
+    }
+}
+sumaMenoresAX(0)*/
+
+//lista de tareas
+/*let arrayVacio = [];
+
+let cantidadTarea = 5
+
+
+function tareas (){
+    for(i = 0; i < cantidadTarea; i++){
+        let agregarTareas =prompt("Agrega las tareas de la casa: ")
+        hacer = arrayVacio.push(agregarTareas)
+        alert(`${i} - ${agregarTareas}`)
+    }
+}
+tareas()*/
+let valen3 = "nombre"
+console.log(valen3);
+
+//ejercicio moureDev
+//operadores arimeticos
+let a = 5
+let b = 6
+console.log(a + b)
+console.log(a - b)
+console.log(a * b)
+console.log(a / b)
+console.log(a % b)
+console.log(a ** b)
+console.log(a + b)
+
+a++//incremento
+console.log(a)
+b--//decremento
+console.log(b)
+
+//operador de asignacion (=)
+let myvariable = 2
+console.log(myvariable)
+myvariable += 2
+console.log(myvariable)
+
+//operadores de comparacion
+console.log(a < b)
+console.log(a > b)
+console.log(a <= b)
+console.log(a >= b)
+console.log(a == b)
+console.log(a === b)//estrictamente igual.
+console.log(a != b)
+console.log(a !== b)
+
+//truthy value (valores verdaderos).
+
+//todos los numeros positivos y negativos menos el 0
+//todas las cadenas de texto menos las vacias
+//todos los boolean
+
+//falsy values (valores falsos)
+
+//0
+//0n
+//null
+//undefined
+//nan
+//el boolean false
+//cadenas de texto vacias
+
+let saludo = "Valen"
+let saludoCompleto = "Hola, " + saludo 
+
+console.log(saludoCompleto.toUpperCase()) //convierte todo el texto a todo mayuscula.
+console.log(saludoCompleto.toLowerCase()) //convierte todo el texto a minuscula
+console.log(saludoCompleto.indexOf(saludo)) //te dice en que indice empieza tal palabra
+console.log(saludoCompleto.includes(saludo))
+console.log(saludoCompleto.includes("perro")) // el includes sirve para verificar si algo existe o no
+console.log(saludoCompleto.slice(0, 7))// esto lo que hace le pedis que te muestre un texto de tal letra hasta tal letras, definis su longitud, siempre incluye el ultimo elemento.
+console.log(saludoCompleto.replace("Valen", "Messi")) //basicamente le decis, si encontras esta palabra, cambiala por esta. solo eso...

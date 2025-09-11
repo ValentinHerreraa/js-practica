@@ -1,17 +1,18 @@
 //apertura capitulo numero 2.
 
  //ARRAYS
- let frutas = ["banana", "manzana", "pera"];
+ //let frutas = ["banana", "manzana", "pera"];
  //alert(frutas[1]);
 
+
  //ARRAYS ASOCIATIVO
- let pc1 = {
+ /*let pc1 = {
     nombrepc: "pc",
     procesador: "intel core i7",
     ram: "16gb",
     espacio: "1tb"
 };
-/*alert(pc1["nombrepc"]);
+alert(pc1["nombrepc"]);
 
 let nombrepc = pc1["nombrepc"];
 let procesador = pc1["procesador"];
@@ -26,8 +27,8 @@ document.write(frase);*/
 
 //BUCLES E ITERACION
 //While
-numberwhile = 0
-/*while (numberwhile <= 10){
+/*numberwhile = 0
+while (numberwhile <= 10){
 
     numberwhile++;
 };
@@ -70,7 +71,7 @@ for(i = 0; i < 20; i++){
 };*/
 
 //For In: te muestra en que indice esta cada elemento del array, no su valor.
- let animales = ["gato", "perro", "tiranosaurio"];
+ //let animales = ["gato", "perro", "tiranosaurio"];
 
  /*for (animal in animales){
     document.write(animal + "<br>");
@@ -123,7 +124,7 @@ document.write("<br>")
   saludar()*/
 
   //return
-  let = numberrr = 10
+  /*let = numberrr = 10
   function hello (){
     if(numberrr > 0){
         return "piola"
@@ -131,7 +132,7 @@ document.write("<br>")
         return"una macana"
     }
   }
-let mayor = hello()
+let mayor = hello()*/
 //alert(mayor)
 
 //parametros
