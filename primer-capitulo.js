@@ -52,48 +52,48 @@ let dos = 2;
 //alert(frase);
 
 //CONCAT: solo sirve para las cadenas de texto.
- let hola = "que haces capo ";
- let chau = "nos vemos crack";
+let hola = "que haces capo ";
+let chau = "nos vemos crack";
 
- esoo = hola.concat(chau);
+esoo = hola.concat(chau);
 
  //alert(esoo);
 
  //${}: esta forma funciona ya poniendo una variable con algo guardado y aprovechando el uso de backticks
- let nombree = "lucas dalto";
+let nombree = "lucas dalto";
 
- let frases = `soy ${nombree} y estoy caminando`;
+let frases = `soy ${nombree} y estoy caminando`;
  //alert (frases);
 
  //OPERADORES DE COMPARACION: compara dos exoresiones y devuelven un valor booleano. (==, ===, !=, !==, >,<, >=, <=)
- let comparar = 23;
- let comparar2 = 13;
- let texto = "texto 1";
- let texto2 = "texto 2";
- let texto3 = "23";
+let comparar = 23;
+let comparar2 = 13;
+let texto = "texto 1";
+let texto2 = "texto 2";
+let texto3 = "23";
 
- let result = comparar !== texto3;
+let result = comparar !== texto3;
 
  //document.write(result);
 
  //OPERADORES LOGICOS: nos devuelven un valor a partir de que se cumpla (o no) una condicion, sus resultado es booleano. (&&, ||, !)
- let operador = 23;
- let operador2 = 34;
+let operador = 23;
+let operador2 = 34;
 
- let operacion = operador < operador2;
- let operacion2 = operador2 < operador;
+let operacion = operador < operador2;
+let operacion2 = operador2 < operador;
 
  //document.write(!operacion);
 
  //CONDICIONALES (if, else if, else)
- let edad1 = 18;
- let edad2 = 17;
+let edad1 = 18;
+let edad2 = 17;
 
- /*let ingreso = prompt("ingresa tu edad")
+/*let ingreso = prompt("ingresa tu edad")
     if(ingreso >= 18){
         alert(`tenes ${ingreso}, podes ingresar al boliche`);
     } else if(ingreso < 18){
-         ("No podes ingresar, volvete a tu casa");
+        ("No podes ingresar, volvete a tu casa");
     };*/
  //HISTORIA DE COFLA 1
 

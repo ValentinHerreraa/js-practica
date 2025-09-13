@@ -6,7 +6,7 @@
 
 
  //ARRAYS ASOCIATIVO
- /*let pc1 = {
+/*let pc1 = {
     nombrepc: "pc",
     procesador: "intel core i7",
     ram: "16gb",
@@ -20,9 +20,9 @@ let ram = pc1["ram"];
 let espacio = pc1["espacio"];
 
 let frase = `El nombre de tu pc es: ${nombrepc}<br>;
-             El procesador es: ${procesador}<br>;
-             La ram es de: ${ram}<br>;
-             Tu espacio es de: ${espacio};`
+                El procesador es: ${procesador}<br>;
+                La ram es de: ${ram}<br>;
+                Tu espacio es de: ${espacio};`
 document.write(frase);*/
 
 //BUCLES E ITERACION
@@ -72,25 +72,24 @@ for(i = 0; i < 20; i++){
 
 //For In: te muestra en que indice esta cada elemento del array, no su valor.
  //let animales = ["gato", "perro", "tiranosaurio"];
-
- /*for (animal in animales){
+/*for (animal in animales){
     document.write(animal + "<br>");
- };
+};
 
- document.write("<br>");*/
+document.write("<br>");*/
 
  //For Of: te mustre ekl elemenot en si del array, no en la posicion que se encuntra.
- /*for (animal of animales){
+/*for (animal of animales){
     document.write(animal + "<br>");
- };*/
+};*/
 
  //Label
- 
+
 /* array1 = ["maria", "josefa", "roberto"]
- array2 = ["pedro", "marcelo", array1, "josefina"]
+array2 = ["pedro", "marcelo", array1, "josefina"]
 
 forRancio:
- for (let array in array2){
+for (let array in array2){
     if(array == 2){
 
         for(let array of array1){
@@ -106,39 +105,39 @@ forRancio:
 
 document.write("<br>")
 
- cantidad = ["manzana", "banana", "pera"]
+cantidad = ["manzana", "banana", "pera"]
 
- for (frutas in cantidad){
+for (frutas in cantidad){
     document.write(cantidad[frutas]+ "<br>")
  } */
 
  //FUNCIONES: simplemente escribimos una sola vez el codigo y lo podemos volver a reutilizar.
-  /*function saludar (){
+/*function saludar (){
     respuesta = prompt("Hola valen, como estuvo tu dia?")
     if(respuesta == "bien"){
         alert("me alegro")
     } else{
         alert("una pena")
     }
-  }
-  saludar()*/
+}
+saludar()*/
 
   //return
-  /*let = numberrr = 10
-  function hello (){
+/*let = numberrr = 10
+function hello (){
     if(numberrr > 0){
         return "piola"
     } else{
         return"una macana"
     }
-  }
+}
 let mayor = hello()*/
 //alert(mayor)
 
 //parametros
 /*function suma(num1, num2){
-   let result = num1 + num2
-   return result
+let result = num1 + num2
+return result
 }
 alert(suma(1, 2))
 

@@ -430,9 +430,173 @@ let saludo = "Valen"
 let saludoCompleto = "Hola, " + saludo 
 
 console.log(saludoCompleto.toUpperCase()) //convierte todo el texto a todo mayuscula.
+
 console.log(saludoCompleto.toLowerCase()) //convierte todo el texto a minuscula
+
 console.log(saludoCompleto.indexOf(saludo)) //te dice en que indice empieza tal palabra
+
 console.log(saludoCompleto.includes(saludo))
 console.log(saludoCompleto.includes("perro")) // el includes sirve para verificar si algo existe o no
+
 console.log(saludoCompleto.slice(0, 7))// esto lo que hace le pedis que te muestre un texto de tal letra hasta tal letras, definis su longitud, siempre incluye el ultimo elemento.
+
 console.log(saludoCompleto.replace("Valen", "Messi")) //basicamente le decis, si encontras esta palabra, cambiala por esta. solo eso...
+
+//CONCIDCIONALES
+
+//operador ternario
+let age = 37;
+const message = age == 37 ? "la edad es 37" : "la edad no es 37"
+console.log(message) 
+
+//switch
+let day = 7 //(lunes)
+let dayname
+switch (day){
+    case 0:
+        dayname = "lunes"
+        break;
+    case 5:
+        dayname = "sabado"
+        break;
+    case 6:
+        dayname = "domingo"
+        break;
+    default:
+        dayname = "Dia no valido"
+}
+console.log(dayname)
+
+//ejercicios condicionales
+
+/*ingresar = prompt("Ingresa el nombre: ")
+let name = "valen"
+if(ingresar === "valen"){
+    alert(`Hola ${ingresar}`)
+} else{
+    alert("No te conozco")
+}*/
+//contraseña y usuario
+/*let usuario = "vazx"
+let contraseña = 1234567
+
+if(usuario === "vazx"){
+    alert(`Bienvenido ${usuario}`)
+}
+if(contraseña === 1234567){
+    alert(`tu contraseña es *******`)
+}*/
+
+//numero positivo
+let numeroValido = 0
+
+if(numeroValido > 0){
+    console.log("es positivo")
+} else if(numeroValido < 0){
+    console.log("es negativo")
+} else{
+    console.log("es cero")
+}
+
+//votaciones
+let edadPersona = 12
+let total = 0
+
+if(edadPersona >= 18){
+    console.log("Podes votar")
+} else{
+    if(edadPersona < 18){
+        suma = 18 - edadPersona
+        console.log(`No podes votar te faltan: ${suma} años.`)
+        
+    }
+}
+
+
+/*let ingresarEstacion = prompt("Ingresa la estacion del año en la que nos encontramos.")
+
+if(ingresarEstacion){
+    alert(`Estamos en ${ingresarEstacion}`)
+}*/
+
+//matrices/ arrays
+let myArray = []
+let myArray2 = new Array()
+
+console.log(myArray)
+console.log(myArray2)
+
+//inicializacion
+
+myArray = [1]
+myArray2 = new Array() //lo que hace este tipo de forma de escribir un array es que en vez de guardar algun dato, reserva un lugar en ese array, cuando ponemos un numero.
+
+console.log(myArray)
+console.log(myArray2)
+
+//almacenar valores y guardarlos
+
+myArray2 = new Array()
+myArray2[0] = "valen"
+myArray2 [1] = "herrera" // de esta forma agregamos valores y los acomodamos como queremos.
+myArray2 [2] = "vazx"
+myArray2 [3] = 972
+console.log(myArray2)
+
+//metodos comunes
+
+myArray = []
+
+//push y pop
+
+//push: agrega elementos a un array de forma decreciente.
+myArray.push(18)
+myArray.push("hola")
+myArray.push("todo bien")
+myArray.push("capoo")
+console.log(myArray)
+
+// pop: elimina el ultimo elemento de un array y lo devuelve.
+console.log(myArray.pop())
+
+//shift y unshift
+
+//shift: elimina el primer elemento de un array y lo devuelve.
+console.log(myArray.shift())
+console.log(myArray)
+
+//unshift: agrega uno o mas elementos al principio del array
+myArray.unshift("que", "me", "eliminas")
+console.log(myArray)
+
+//length: te dice que longitud tiene nuestro array, tambien sirve para recorrerlo.
+console.log(myArray.length)
+
+//clear ¿como borramos lo que hay dentro de nuestro array?
+//simplemente lo inicializamos nuevamente.
+
+myArray = []
+console.log(myArray)
+
+//slice: elejis con que elemento quedarte, pero siempre va a ignorar el ultimo indice que le indiquemos.
+
+myArray.push("messi", "ronaldo", "neymar", "hazard")
+let probandoSlice = myArray.slice(0, 2)
+
+
+console.log(probandoSlice)
+
+//splice: lo que hace el splice es que le decimos que elementos no queremos que se muestre y decimos nosotros cuales dejamos.
+
+//dato: si inicializamos todo en un console.log(). En vez de eliminar los elementos que elegimos, son los que nos va a dejar.
+
+myArray.splice(1,2)
+console.log(myArray)
+//set
+
+//declaracion
+let mySet = new Set()
+
+//inicializacion
+mySet = new Set("messi", "ronaldo", "neymar", "hazard")
+console.log(mySet)
