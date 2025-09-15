@@ -600,3 +600,44 @@ let mySet = new Set()
 //inicializacion
 mySet = new Set("messi", "ronaldo", "neymar", "hazard")
 console.log(mySet)
+
+//maquina expendedora
+/*let bebida;
+let peticion = parseInt(prompt("Ingresa la bebida que deseas tomar: "))
+
+switch (peticion){
+    case 1:
+        bebida = "Cocacola"
+    break;
+    case 2:
+        bebida = "Sprite"
+    break;
+    case 3:
+        bebida = "Fanta"
+    break;
+    case 4:
+        bebida = "Pasos de los toros"
+    break;
+    default:
+        bebida = "No la tenemos"
+}
+alert(bebida)
+
+//rol
+let rol = prompt("Ingresa tu rol a cumplir")
+let rolACumplir;
+
+switch (rol){
+    case "admin":
+        rolACumplir = "Tienes acceso total"
+    break;
+    case "editor":
+        rolACumplir = "Puedes editar contenido"
+    break;
+    case "invitado":
+        rolACumplir = "Solo puedes ver"
+    break;
+    default:
+        rolACumplir = "No coincide el rol"
+}
+alert(rolACumplir)*/
