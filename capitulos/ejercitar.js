@@ -1,8 +1,8 @@
 //recorrer todos los nombres del array
-let invitados = ["valen", "marti", "lucio"];
+/*let invitados = ["valen", "marti", "lucio"];
 for (invitado of invitados){
-    //alert(invitado)
-}
+    alert(invitado)
+}*/
 
 //control de stock
 //let productos = ["pan", "leche", "queso", "huevos", "arroz"]
@@ -500,13 +500,12 @@ if(numeroValido > 0){
 
 //votaciones
 let edadPersona = 12
-let total = 0
 
 if(edadPersona >= 18){
     console.log("Podes votar")
 } else{
     if(edadPersona < 18){
-        suma = 18 - edadPersona
+        let suma = 18 - edadPersona
         console.log(`No podes votar te faltan: ${suma} años.`)
         
     }
@@ -623,7 +622,10 @@ switch (peticion){
 }
 alert(bebida)
 
-//rol
+//*tipo de comentarios (importante)
+// ? rol (pregunta)
+// ! piola (deprecado)
+// TODO:  (refactor)
 let rol = prompt("Ingresa tu rol a cumplir")
 let rolACumplir;
 
@@ -641,3 +643,6 @@ switch (rol){
         rolACumplir = "No coincide el rol"
 }
 alert(rolACumplir)*/
+
+//ARRAYS Y BUCLES
+//carrera de autos

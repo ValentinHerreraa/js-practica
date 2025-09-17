@@ -1,0 +1,25 @@
+{
+  "name": "js-practica",
+  "version": "1.0.0",
+  "description": "Todo lo que vaya aprendiendo de Java Script, lo voy a subir aca.",
+  "main": "cuarto-capitulo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValentinHerreraa/js-practica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValentinHerreraa/js-practica/issues"
+  },
+  "homepage": "https://github.com/ValentinHerreraa/js-practica#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "eslint": "^9.35.0",
+    "globals": "^16.4.0"
+  }
+}
