@@ -160,6 +160,7 @@ console.log(array7);
 console.log(resultarray6);
 
 //!APRENDER TODO LO VISTO, LUEGO SE SEGUIRA CON MAS METODOS.
+//!CADENAS
 //1
 let carrito = [];
 console.log(carrito);
@@ -171,13 +172,114 @@ console.log(carrito);
 carrito.unshift("pollo", "carne");
 console.log(carrito);
 
-//2
+//? 2
 let lista = ["a", "b", "c", "d", "e"];
 let eliminar = lista.splice(2, 1, "x", "y", "z");
 console.log(lista);
 console.log(eliminar);
 
+//3 starwith: verifica si empieza con tal palabra.
+let cadena1 = "info@gamil.com";
+let rs = cadena1.startsWith("info@");
+console.log(rs);
+
+//4 endswith: verifica si termina con tal palabra
+let cadena2 = "hola.jpg";
+let rs1 = cadena2.endsWith("png");
+console.log(rs1);
+
+//5 indexof y lastindexof: buscar en que posicion esta lo que le estamos pidiendo, si no encuentra devuelve (-1)
+let cadena3 = "javascript python c++ c#";
+let rs2 = cadena3.indexOf("python");
+console.log(rs2);
+
+//6 includes: verifica si una palabra esta en tal cadena, retorna true, de lo contrario, false.
+let cadena4 = "estoy muy triste";
+let rs3 = cadena4.includes("muy");
+console.log(rs3);
+
+//7 repeat (): le pasamos un numero como parametro y esas van a ser las veces que se va a repetir la misma palabra X veces.
+let cadena5 = "ok";
+let rs4 = cadena5.repeat(5);
+console.log(rs4);
+
+//8 
+// trim (): elimina ambos espacios, los de delante y los de atras.
+//endTrim (): elimina los espacios al final.
+//starTrim (): elimina los espacios de delante.
+let cadena6 = "    Aca no permitimos espacios     ";
+let rs5 = cadena6.trim();
+console.log(rs5);
+
+//9 substring (): lo que hace substring () es basicamente decirle, indicarle donde queremos que empieze y termina la cadena. 
+let cadena7 = "Aprendiendo Javascript";
+let rs6 = cadena7.substring(12, 23);
+console.log(rs6);
+
+//10 split (): lo que haces es basicamente convertir una cadena de texto a un array
+let cadena8 = "2, 3, 4, 5, 6, 7";
+let rs7 = cadena8.split(",");
+console.log(rs7);
+
+//11 tostring (): convierte o pasa a una cadena de taxto y deja de ser algun dato contrario.
+let cadena9 = 2025;
+let rs8 = cadena9.toString();
+console.log(rs8 + " Es el ano actual.");
+
+//12 tostring: convierte o pasa a una cadena de texto.
+//pad end: agrega caracteres al final
+//padstart: agrega caracteres al principio
+let cadena10 = 7;
+let rs9 = cadena10.toString();
+console.log(typeof rs9);
+let agree = rs9.padStart(3, "0");
+console.log(agree);
+
+//!ARRAYS.
+//1 push: agrega elementos al final de un array
+let vacio1 = [];
+let practica = vacio1.push("manzana", "pera", "banana");
+console.log(vacio1);
+console.log(practica);
+
+//2 pop: elimina el ultimo elemento de un array y lo devuelve.
+//shift: elimina el primer elemento de un array y lo devulve.
+
+let vacio2 = [1,2,3,4,5,6];
+let practica2 = vacio2.pop() && vacio2.shift();
+console.log(vacio2);
+console.log(practica2);//en este caso devuelve 1 porque el && lo que hace es devolver el ultimo valor truthy evaluado.
+
 //3
-let paises = ["arg", "bel", "ger", "turk"];
-let pais = paises.indexOf(0);
-console.log(pais);
+let vacio3 = ["buenos aires", "merlo", "campana"];
+let practica3 = vacio3[0];
+console.log(practica3);
+
+//4 reverse: devuelve los elementos del array en orden inverso, el que estaba ultimo pasa a ser el primero. 
+let vacio4 = ["h", "o","l", "a" ];
+let practica4 = vacio4.reverse();
+console.log(practica4);
+
+//5 slice: pasamos dos parametros que indican el inicio y fin de los elementos, es decir, nosotros decidimos que queremos que nos devuelva, siempre ignora la posicion del segundo parametro.
+let vacio5 = [2,3,4,5,6,7,8,9,10,22];
+let practica5 = vacio5.slice(3, 7);
+console.log(practica5);
+
+//6 join: lo que hace join es basicamente convertir un array a una cadena de texto (string).
+let vacio6 = ["hola", "todo", "bien"];
+let practicar6 = vacio6.join("-");
+console.log(practicar6);
+
+//!SEGUIR CON LO METODOS DE ARRAYS.
+//! filter() y forEach()
+
+let nombres = ["valen", "marcos", "angel", "lucio"];
+nombres.forEach((nombre, i) => {
+    console.log(`${i}: ${nombre}`);
+});
+
+
+
+
+
+

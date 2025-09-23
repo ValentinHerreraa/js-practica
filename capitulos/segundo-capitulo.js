@@ -156,3 +156,29 @@ saludo("pedro")*/
 saludar("valen")*/
 
 //HISTORIA DE COFLA 2
+//!funciones flecha: aprenderlas bien y hacer ejercicios.
+//*funcoin normal/clasica: palabra reservada funcion mas el parametro, la tradicional.
+function jaja (nombre){
+    console.log(nombre);
+}
+jaja("hola");
+
+//*funciones anonimas: son las que reciben un nombre mediante de una constante.
+const jeje = function(nombre){
+    console.log(nombre);
+};
+jeje("chau");
+
+//*funciones flechas: estructura: () => {}
+let jiji = (nombre) => {
+    console.log(nombre);
+};
+(jiji("bye"));
+
+//!practicar: filter(), map(), forEach()
+let nombres = ["val", "marti", "maria", "lola"];
+let filter = nombres.filter((nombre, i) => {
+    console.log(`${i}: ${nombre}`);
+    
+});
+console.log(filter);
