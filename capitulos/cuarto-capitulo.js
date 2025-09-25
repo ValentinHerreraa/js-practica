@@ -1,35 +1,31 @@
-//! METODOS DE CADENAS
-
-//*concat: Sirve para concatenar dos variables que contengan un string, mediante una palabra reservada.
-
-let cadena = "cadena de prueba para ver los distintos operadores de prueba";
-let resultado = cadena.concat(" hola");
-console.log(resultado);
+let cadenaxx = "cadena de prueba para ver los distintos operadores de prueba";
+let resultadooo = cadenaxx.concat(" hola");
+console.log(resultadooo);
 
 //*Starwith: verifica como empieza una cadena, si empieza de la misma manera retorna true, de lo contrario false.
 
-let star = cadena.startsWith("Cadena");
+let star = cadenaxx.startsWith("Cadena");
 console.log(star);
 
 //*endwith: lo mismo que starswith pero verifica al final de una cadena, si empieza de la misma manera.
 
-let end = cadena.endsWith("prueba");
+let end = cadenaxx.endsWith("prueba");
 console.log(end);
 
 //*includes: si un contenido esta en ambas cadenas retorna true, de lo contrario, si no hay lo que estamos buscando en otra cadena, false.
 //*o tambien cuando queremos verificar lo que hay en una cadena.
 
-let includes = cadena.includes("valen");
+let includes = cadenaxx.includes("valen");
 console.log(includes);
 
 //*IndexOf: nos dice en que indice empieza tal palabra, tambien podemos buscar los indices de las letras, en caso de no eonctrar lo que estamos buscando buscando nos va a devolver (-1)
 
-let index = cadena.indexOf("prueba");
+let index = cadenaxx.indexOf("prueba");
 console.log(index);
 
 //*LastIndexOf: lo mismo que indexof, pero recorre de atras hacia delante, es decir, de mayor a menor y tambien busca el ultimo indcice, no el primero ademas devuelve (-1) cuando no encontramos algo.
 
-let lastIndex = cadena.lastIndexOf("hello");
+let lastIndex = cadenaxx.lastIndexOf("hello");
 console.log(lastIndex);
 
 console.log("//EJERCICIOS");
@@ -270,14 +266,125 @@ let vacio6 = ["hola", "todo", "bien"];
 let practicar6 = vacio6.join("-");
 console.log(practicar6);
 
-//!SEGUIR CON LO METODOS DE ARRAYS.
-//! filter() y forEach()
+//!SEGUIR CON METODOS DE CADENAS Y ARRAYS.
+let seguir = [1,22,13,41,5,16];
 
-let nombres = ["valen", "marcos", "angel", "lucio"];
-nombres.forEach((nombre, i) => {
-    console.log(`${i}: ${nombre}`);
-});
+//pop: elimina el ultimo
+let s = seguir.pop();
+console.log(s);
+console.log(seguir);
 
+//shift: elimina el primero
+let s1 = seguir.shift();
+console.log(s1);
+console.log(seguir);
+
+//push: agrega al final.
+let s2 = seguir.push(6);
+console.log(s2);
+console.log(seguir);
+
+//unshift: agrega al principio
+let s3 = seguir.unshift(1);
+console.log(s3);
+console.log(seguir);
+
+//splice: inicializa, saca, remplaza. elimina los elementos por completo
+let s4 = seguir.splice(1,1,"reemplazo");
+console.log(s4);
+console.log(seguir);
+
+//slice: saca elementos y los alamcena en nuevo array.
+let s5 = seguir.slice(1,4);
+console.log(s5);
+
+//reverse: invierte el orden.
+let s6 = seguir.reverse();
+console.log(s6);
+
+//concat: sirve para concatenar cualquier tipo de variable, valor, elemento, etc.
+let seguir2 = [34,45,67,89];
+let s7 = seguir.concat(seguir2);
+console.log(s7);
+
+//join: convierte un array en un string.
+let seguir3 = ["hello ", "what about you ", "?"];
+let s8 = seguir3.join("-");
+console.log(s8);
+
+//includes: verifica si algo esta dentro de una cadena o array.
+let s9 = seguir.includes(9090);
+console.log(s9);
+
+let seguir4 = [1,18,9,90,34,2];
+
+for(let i = 0; i < seguir4.length; i++){
+    if(seguir4[i] >= 18){
+        console.log(seguir4[i]);
+    }
+};
+
+for(let i = 0; i < seguir3.length; i++){
+    console.log(seguir3[i]);
+}
+
+let seguir5 = [1,2,3,4,5,6];
+
+
+const map1 = seguir5.map(n => n + 10);
+console.log(map1);
+//!seguir con metodos de cadenas
+
+//starwith: empieza con...
+let cad = "pro zarpado en mal educado";
+let c = cad.startsWith("pro");
+console.log(c);
+
+//endwith: termina con...
+let cad1 = "me gusta esta oracion";
+let c1 = cad1.endsWith("cion");
+console.log(c1);
+
+//indexof: busca donde empieza cada letra, numero, va a lo primero. en que posicion.
+
+//lastindexof: si hay dos letras "a" va a por la segunda.
+let cad2 = "persona mayor a 80";
+let c2 = cad2.lastIndexOf("a");
+console.log(c2);
+
+//includes: verifica si existe una palabra en otro lugar
+let cad3 = "me gusta javaScript";
+let c3 = cad3.includes("javaScript");
+console.log(c3);
+
+//repeat: repite una palabra cuantas veces indiquemos.
+let cad4 = "ok";
+let c4 = cad4.repeat(5);
+console.log(c4);
+
+//split: convierte una cadena a un string.
+let c5 = "hola, mundo, todo, bien".split(",");
+console.log(c5);
+
+//substring: le decis desde donde hasta donde te tiene que mostrar un string
+let c6 = cad3.substring(0,6);
+console.log(c6);
+
+//toString: convierte cualquier tipo de dato en un string.
+let cad5 = 90000;
+let c7 = cad5.toString();
+console.log(c7);
+console.log(typeof c7);
+
+//padstart: agrega caracteres dependiendo de que queremos agregar y cuantos mas.
+
+let cad6 = "555";
+let c8 = cad6.padStart(10, "0");
+console.log(c8);
+
+//padend: los mismo que padstart pero los agrega al final.
+let c9 = cad6.padEnd(10, "*");
+console.log(c9);
 
 
 

@@ -176,9 +176,74 @@ let jiji = (nombre) => {
 (jiji("bye"));
 
 //!practicar: filter(), map(), forEach()
-let nombres = ["val", "marti", "maria", "lola"];
-let filter = nombres.filter((nombre, i) => {
-    console.log(`${i}: ${nombre}`);
+//todo: significado de cada uno.
+//*filter (): Crea una nuevo array con los elementos que cumplen una condicion.
+
+//*map ():Crea un nuevo array con el resultado de aplicar una funcion a cada elemento.
+
+//*forEach (): Recorre el array y ejecuta una funcion por cada elemento (no devuelve nada)
+
+let nombres = ["valen", "juan", "agustin", "faustino"];
+
+nombres.forEach((nombre) => {
+    console.log(nombre);
+    return true;
     
 });
+
+console.log("<br>");
+
+let names = ["martina", "maria", "angel"];
+
+const map = names.map((name) => {
+    let retornar = console.log(name);
+    return retornar;
+});
+console.log(map);
+
+let juegos = ["futbol", "basquet", "natacion"];
+const filter = juegos.filter (juego =>{
+    console.log(juego);
+    return juego.toUpperCase();
+});
 console.log(filter);
+
+let frutas = ["manzana", "pera", "damasco"];
+
+let map2 = frutas.forEach (fruta => {
+    console.log(`Mi fruta favorita es: ${fruta}`);
+    return true;
+});
+console.log(map2);
+//*Despues de tener consolidado arrays funciones y condicionales, seguir con map,filter y foreach. */
+
+//! (ejercicios) SEGUIR CON ARRAYS, CONDICIONALES, FUNCIONES Y METODOS.
+
+let algunos = [13, 14, 3, 56, 2, 1, 78, 90, 0];
+/*function devolver (){
+    for(let alguno of algunos){
+        if(alguno > 10){
+            console.log(alguno);
+        };
+    };
+};
+console.log(devolver());*/
+
+function otro (){
+    for(let i = 0; i < algunos.length; i++){
+        if(algunos[i] > 10){
+            console.log(algunos[i]);
+        }
+    };
+}
+otro();
+
+let arreglo = [];
+let ramdom = 3;
+
+let ing = prompt("Ingresa 3 nombres: ");
+
+for(let i = 0; i < ramdom; i++){
+    let nombresIngresados = arreglo.push(ing);
+    alert(`Los nombres que ingresaste son: ${nombresIngresados}`);
+}

@@ -1,4 +1,3 @@
-//recorrer todos los nombres del array
 /*let invitados = ["valen", "marti", "lucio"];
 for (invitado of invitados){
     alert(invitado)
@@ -644,5 +643,78 @@ switch (rol){
 }
 alert(rolACumplir)*/
 
-//ARRAYS Y BUCLES
-//carrera de autos
+// !1. EJERCITAR: filter, map, for each.
+//! 2. EJERCITAR : condicionales, bucles, funciones, arrays, metodos de arrays y cadenas, 
+
+//!map
+//sumar 10
+let map1 = [1,2,3,4,5];
+const te = map1.map(n => n += 10);
+console.log(te);
+
+//mayus
+let map2 = ["ale", "fran", "juan"];
+const te1 = map2.map(nombre => nombre.toUpperCase(map2));
+console.log(te1);
+
+//cantidad letras
+let map3 = ["balon", "juego", "plato"];
+const te2 = map3.map(letra => letra.length);
+console.log(te2);
+
+//$
+let map4 = ["100","200","300"];
+let te3 = map4.map(numero => "$" + numero);
+console.log(te3);
+
+//frases split:separa las palabras de un array por espacios.
+let map5 = [
+    "soy yo", 
+    "la mentira", 
+    "misma piedra"
+];
+let te4 = map5.map(palabra => palabra.split(",")[0]);
+console.log(te4);
+
+//!filter
+//par
+let filter1 = [1,2,3,4,5,6,7,8,9,10,11,12];
+let ag = filter1.filter(par => par % 2 === 0);
+console.log(ag);
+
+//con "A"
+let filter2 = ["Aylen", "antonio", "lucas", "Ayelen", "lucio"];
+let ag1 = filter2.filter(quedar => quedar.startsWith("A"));
+console.log(ag1);
+
+//mayor
+let filter3 = [18, 2, 67, 3, 8];
+let ag2 = filter3.filter(mayor => mayor >= 18);
+console.log(ag2);
+
+//correo
+let filter4 = ["pancho@gmail", "piola@hotmail", "lucas@yahoo"];
+let ag3 = filter4.filter(correo => correo.endsWith("@gmail"));
+console.log(ag3);
+
+//posicion
+let filter5 = ["extraordinario", "hola", "baloncesto", "chau"];
+const ag4 = filter5.filter(mas => mas.length > 5);
+console.log(ag4);
+
+//!forEach: 
+// //?para que sirve 
+//! 1. Mostrar/registrat cada elemento.
+//! 2. Modificar elementos del array original.
+//! 3. acumular en una variable externa.
+//! 4. Manipular el dom.
+
+//ejercicios mezclando de todo un poco
+//filtrar
+let filt1 = ["valen", "Angel", "analia", "lucio", "lucas", "Alvaro"];
+
+for(let i = 0; i < filt1.length; i++){
+    const filt2 = filt1.filter (name => name.startsWith("A"));
+    console.log(filt2);
+    
+}
