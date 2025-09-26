@@ -716,5 +716,88 @@ let filt1 = ["valen", "Angel", "analia", "lucio", "lucas", "Alvaro"];
 for(let i = 0; i < filt1.length; i++){
     const filt2 = filt1.filter (name => name.startsWith("A"));
     console.log(filt2);
+    break;
     
 }
+//contar
+let frases = ["amo javascript", "python", "javascript lo mejor", "typescript"];
+let contador = 0;
+
+for (let i = 0; i < frases.length; i++) {
+    if (frases[i].includes("javascript")) {
+        contador++;
+    }
+}
+
+//constra palabras.
+console.log(`Hay ${contador} frases que contienen "javascript"`);
+
+let pala = ["teclado", "lampara", "foco", "mesa"];
+let pala2 = [];
+
+for(let i = 0; i < pala.length; i++){
+    if(pala[i].length > 4){
+        pala2.push(pala[i].toUpperCase());
+    }
+}
+console.log(`Ahora la variable pala2 tiene: ${pala2} `);
+
+//precios
+let varios = [100, 1500, 1099, 350, 40000, 30,];
+let preciosConDescuento = [];
+
+    for(let i = 0; i < varios.length; i++){
+            if(varios[i] > 1000){
+                preciosConDescuento.push(10 * varios[i] / 100);
+            }
+    };
+console.log(`Lo que compraste quedo en: ${preciosConDescuento}`);
+
+//emails validos
+let correos = ["val@gmail.com", "mari@gmail.com", "abu@gmail.com", "    lola@gmail.com    "];
+
+let agregarCorreosValidos = [];
+
+for(let i = 0; i < correos.length; i++){
+    if(correos[i].endsWith("@gmail.com")){
+        agregarCorreosValidos.push(correos[i]);
+    }
+}
+console.log(`Correos Validos: ${agregarCorreosValidos}`);
+
+//promedio con condicional
+let notasEscolares = [7, 6, 1, 4, 10, 8, 5];
+
+let total = 0;
+let contador1 = 0;
+
+for(let i = 0; i < notasEscolares.length; i ++){
+    if(notasEscolares[i] >= 6){
+        total += notasEscolares[i];
+        contador1++;
+    }
+}
+    if(contador > 0){
+        const promedio = total / contador1;
+        console.log(`Tu promedio es de: ${promedio}`);
+    }
+
+    let frasesVarias = ["el tiempo que corre es arena en mis manos", "sea caluroso en los elogios y generosos en sus alagos", "no fue la gente que me saco del pozo, sino los que se sentaron conmigo","no es asi", "arena en mis manos", "cuatro de copas"];
+
+    let frasesCortas = [];
+    let frasesLargas = [];
+
+    for(let i = 0; i < frasesVarias.length; i++){
+        if(frasesVarias[i].length < 20){
+            frasesCortas.push(frasesVarias[i]);
+            console.log(frasesVarias[i]);
+        } else{
+            frasesLargas.push(frasesVarias[i]);
+        }
+    }
+    console.log(`Freases cortas: ${frasesCortas}`);
+    console.log(`Frases largas: ${frasesLargas}`);
+
+    console.log("<br>");
+//transformar usuarios: pendiente.
+
