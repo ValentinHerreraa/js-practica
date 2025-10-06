@@ -799,5 +799,123 @@ for(let i = 0; i < notasEscolares.length; i ++){
     console.log(`Frases largas: ${frasesLargas}`);
 
     console.log("<br>");
-//transformar usuarios: pendiente.
 
+//Unir palabras
+let variasPalabras = ["ojo", "hola", "zarpado", "te", "ballena"];
+
+for (let i = 0; i < variasPalabras.length; i++){
+    if(variasPalabras[i].length > 3){
+        variasPalabras.join(",");
+        console.log(variasPalabras[i]);
+    } else{
+        console.log("Error");
+    }
+}
+
+//? Ejercicios para mejorar la logica y el dominio de js
+//* Bloque 1 - Fundamentos y logica (funciones + condicionales + bucles)
+
+//1
+function parImpar (numero){
+    if(numero % 2 === 0){
+        console.log("Es par");
+    }
+    if(numero % 2 === 1){
+        console.log("Es impar");
+    }
+}
+parImpar(9);
+
+//2
+function equis (n){
+    for(let i = 0; i < n; i++){
+        console.log(i);
+    }
+}
+equis(20);
+
+//3
+const mayorQue = [1, 34, 55, 12, 18];
+function cuantas (){
+    let totalmayores = 0;
+    for(let i = 0; i < mayorQue.length; i++){
+        if(mayorQue[i] >= 18){
+            totalmayores++;
+        }
+    }
+    console.log(`Personas mayores a 18 son: ${totalmayores}`);
+}
+cuantas();
+
+//*Bloque 2 - Arrays + metodos + logica
+//1
+let preciosIVA = [2500, 350, 600, 3400];
+
+const porcentaje = preciosIVA.map((precios) => {
+    let totalFinal = 21 * precios / 100;
+    return totalFinal + precios;
+});
+console.log(porcentaje);
+
+//2
+let conA = ["armenio", "alejandro", "Angel", "Agusto"];
+let soloLosNombresConA = [];
+
+for(let i = 0; i < conA.length; i++){
+    if(conA[i].startsWith("A")){
+        soloLosNombresConA.push(conA[i]);
+    }
+}
+console.log(`los nombres que empiezan con a son: ${soloLosNombresConA}`);
+
+
+//3
+let variasPalabrass = ["Genio", "Estamos", "Futbol", "Loco"];
+let separar = variasPalabrass.join(",");
+console.log(separar);
+
+//4
+let caracteres = ["futbol", "paraplegico", "acido ribonucleico", "desencamaronamelo"];
+for(let i = 0; i < caracteres.length; i++){
+    console.log(`La longitud de la palabra ${caracteres[i]} 
+        es de: ${caracteres[i].length}`);
+}
+
+//*bloque 3 - Objetos + Funciones
+//1
+const persona = {
+    nombre: "Valen",
+    edad: 20,
+    ciudad: "Campana"
+};
+console.log(`Su nombre es ${persona.nombre}, tiene ${persona.edad} y es de ${persona.ciudad}`);
+
+//2
+function modelo (marca, modelo, ano){
+    return `Auto: ${marca} ${modelo} (${ano})`;
+}
+console.log(modelo("Ford", "Escort", "1998" ));
+
+//3
+let alumnosSanMartin = [
+{
+    nombre: "valentin",
+    nota: 7
+},
+{
+    nombre: "Franciso",
+    nota: 8
+},
+{
+    nombre: "Lucas",
+    nota: 3
+},
+];
+function aprobados (){
+    for(let i = 0; i < alumnosSanMartin.length; i++){
+        if(alumnosSanMartin[i].nota >= 6){
+            console.log(`Los alumnos aprobados son ${alumnosSanMartin[i].nombre}`);
+        }
+    }
+};
+aprobados();

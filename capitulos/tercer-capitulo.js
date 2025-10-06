@@ -302,3 +302,68 @@ class math{
 
 const problem1 = new math(15, 20, 16.4, 9, 0);
 problem1.fisica();
+
+//!OBJETOS y ARRAYS
+
+//para crear un objeto en este caso de usa "{}": el objeto se creo para tener muchos elemento con diferentes tipos de datos, el array se penso para que tenga un mismo dato en todo el bloque.
+const objeto = {
+    nombre: "valen",
+    apellido: "herrera",
+    edad: 18
+};
+
+//ingresar a una propiedad de un obejto
+const objeto1 = objeto.nombre; 
+console.log(objeto1);
+
+//editar propiedad:
+objeto.edad = 34;
+console.log(objeto);
+
+//agregar una nueva propiedad: es la misma sintaxis de cambiar la propiedad nada mas que tenemos que poner un nuevo nombre.
+objeto.deporteFavorito = "futbol";
+console.log(objeto);
+
+//borrar una propiedad: con la palabra reservada delete se saca una propiedad.
+delete objeto.nombre;
+console.log(objeto);
+
+//recorrer un objeto
+for(let hola in  objeto){
+    console.log(hola, objeto[hola]);
+}
+//!COMBINADOS
+const variosUsuarios = [
+    {
+        nombre: "valen",
+        apellido: "herrera",
+        edad: 20
+    },
+    {
+        nombre: "francisco",
+        apellido: "sottile",
+        edad: 21,
+    },
+    {
+        nombre: "lucio",
+        apellido: "magnin",
+        edad: 19
+    },
+];
+for(let i = 0; i < variosUsuarios.length; i++){
+    console.log("==========");
+    console.log("Nombre: " + variosUsuarios[i].nombre);
+    console.log("Apellido: " + variosUsuarios[i].edad);
+    console.log("Edad: " + variosUsuarios[i].edad);
+}
+//!COMBINADOS 2:
+const algoNuevo = {
+    nombre:"Objeto con array",
+    arr: ["abeja", "banana", "camion", "dado"],
+};
+console.log(algoNuevo);
+
+algoNuevo.arr.forEach((elemento) => {
+    console.log(elemento + "jaja");
+});
+//elemnto lo que hace es que toma cada valor del array, es decir, no toma el indice pero si toma el valor de cada uno de los elementos.

@@ -87,15 +87,3 @@ document.write(result);*/
         ("No podes ingresar, volvete a tu casa");
     };*/
  //HISTORIA DE COFLA 1
-
-
-
-
-    
-
-
-
-
-
- 
- 

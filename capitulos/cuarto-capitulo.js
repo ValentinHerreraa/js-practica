@@ -386,7 +386,70 @@ console.log(c8);
 let c9 = cad6.padEnd(10, "*");
 console.log(c9);
 
+//!PRACTICAR METODOS DE CADENAS Y ARRAYS (2daPARTE)
 
+//*substring: sirve para elegir por que caracter empezar y terminar.
+let frase1 = "que bueno que esta el dia";
+let fra = frase1.substring(0,6);
+console.log(fra);
+
+//*trim: trimEnd (): elimina espacios al final, trimStart (): elimina espacio al principio, trim (): elimina ambos lados
+let frase2 = "   muchosespacios         ";
+let frb = frase2.trim();
+console.log(frb);
+
+//*touoppercase: convierte un texto, todo a mayuscula.
+let frase3 = "que onda perreke";
+let frc = frase3.toUpperCase();
+console.log(frc);
+
+//*Tolowercase (): convierte todo a minuscula
+let frase4 = "JAVASCRIPT";
+let frd = frase4.toLowerCase();
+console.log(frd);
+
+//*starwith(): verifica si empieza con... tal caracter o palabra.
+
+//*endWith(): verifica si termina con... tal palabra.
+
+//*indexof(): busca un caracter y devuelve en que posicion esta
+let frase5 = "el sol brilla fuerte";
+let fre = frase5.indexOf("sol");
+console.log(fre);
+
+//*lastIndexOf(): busca un caracter y devuelve valor, es lo mismo que indexOf, pero cuando buscas un mismo valor y esta mas de dos vecs, va a por el ultimo.
+let frase6 = "okokokokok";
+let frf = frase6.lastIndexOf("ok");
+console.log(frf);
+
+//*includes(): verifica si una palabra se encuntra en una cade texto.
+let frase7 = "me gusta mucho jugar futbol";
+let frg = frase7.includes("Mucho");
+console.log(frg);
+
+//*repeat(): sirve para repetir una palabra cuantas veces lo indiquemos.
+let frase8 = "<br>que locura esto";
+let frh = frase8.repeat(10);
+console.log(frh);
+//
+let frase9 = "buenos dias";
+let fri = frase9.substring(0, 6);
+console.log(fri);
+
+//*toString(): convierte todo tipo de dato, a un string
+let frase10 = 2025;
+let frj = frase10.toString();
+console.log(frj);
+
+//*split(): lo que hace split, es convertir un string en un array.
+let frase11 = "javascript, rocks";
+let frk = frase11.split(",");
+console.log(frk);
+
+//*Number(): sirve para cambiar de tipo de dato a number.
+let frase12 = "2345";
+let frl = Number(frase12);
+console.log(typeof frl);
 
 
 
