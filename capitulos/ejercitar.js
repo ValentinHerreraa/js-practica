@@ -912,10 +912,118 @@ let alumnosSanMartin = [
 },
 ];
 function aprobados (){
+    const alumnosAprobados = [];
     for(let i = 0; i < alumnosSanMartin.length; i++){
-        if(alumnosSanMartin[i].nota >= 6){
-            console.log(`Los alumnos aprobados son ${alumnosSanMartin[i].nombre}`);
+        const alumnoVario = alumnosSanMartin[i];
+        if(alumnoVario.nota >= 6){
+            alumnosAprobados.push(alumnoVario.nombre);
         }
     }
+    console.log(`los alumnos aprobados son: ${alumnosAprobados.join(",")}`);
 };
 aprobados();
+//4
+const celulares = [
+    {marca: "samsung", color: "rojo"},
+    {marca: "motorola", color: "azul"},
+    {marca: "apple", color: "blanco"},
+];
+for(let i = 0; i < celulares.length; i++){
+    console.log(celulares[i].modelo); 
+    console.log(celulares[i].color);
+}
+
+//*Bloque 4 - Clases y POO Basica.
+//1
+class libro{
+    constructor(titulo, autor, precio,){
+        this.titulo = titulo;
+        this.autor = autor;
+        this.precio = precio;
+        this.info = (`El nombre el libro es ${this.titulo}, el autor se llama ${this.autor} y el precio es de ${this.precio} y de color ${this.colorLibro}`);
+    }
+    frase(){
+        console.log(this.info);
+    }
+}
+class folleto extends libro{
+    constructor(titulo, autor, precio, colorLibro){
+        super(titulo, autor, precio);
+        this.colorLibro = colorLibro;
+        this.info = (`El nombre el libro es ${this.titulo}, el autor se llama ${this.autor} y el precio es de ${this.precio} y de color ${this.colorLibro}`);
+    }
+    //static no depende directamente del objeto sino que de la clase.s
+    set modificarColor(newColor){
+        this.colorLibro = newColor;
+    }
+    frase2 (){
+        console.log(this.info);
+    }
+}
+const modificar = new folleto("Habits", "James", "21500", "negro");
+modificar.frase2();
+modificar.modificarColor = "Crudo";
+modificar.frase2();
+
+
+
+//2
+class cuentaBancaria{
+    constructor(saldoInicial, depositar, retirar){
+        this.saldoInicial = saldoInicial;
+        this.depositar = depositar;
+        this.retirar = retirar;
+
+        this.info = `Tu saldo es de: ${this.saldoInicial} 
+        Depositaste:  ${this.depositar}. 
+        Saldo actual: ${this.saldoInicial + this.depositar}.`;
+
+    }
+
+    ingresarPlata(){
+        console.log(this.info);
+    }
+
+    retirarPlata(){
+        console.log(`Retiraste: ${this.retirar}
+        saldo actual:  ${this.saldoInicial + this.depositar - this.retirar}`);
+    }
+}
+const cliente = new cuentaBancaria(1500, 1200, 1700);
+cliente.ingresarPlata();
+cliente.retirarPlata();
+
+//3
+class usuario{
+    constructor(nombre, edad){
+        this.nombre = nombre;
+        this.edad = edad;
+        this.info = `Podes ingresar ${this.nombre}, tenes ${this.edad}`;
+    }
+    mayorDeEdad (){
+        if(this.edad > 18){
+            console.log(this.info);
+        } else{
+            console.log("No podes ingresar " + this.nombre + " sos menos de edad");
+        }
+    }
+}
+const ingreso1 = new usuario("valentin", 19);
+ingreso1.mayorDeEdad();
+
+//4
+class cancha{
+    constructor(nombre, precioHora, horasDeReserva){
+        this.nombre = nombre;
+        this.precioHora = precioHora;
+        this.horasDeReserva = horasDeReserva;
+        this.info = `Horas reservada la cancha: ${this.horasDeReserva}.
+        Pagaste la cancha: ${this.precioHora * this.horasDeReserva}. 
+        Complejo a jugar: ${this.nombre}.`;
+    }
+    costo (){
+        console.log(this.info);
+    }
+}
+const infoCancha = new cancha("Mundialista", 25000, 3,);
+infoCancha.costo();

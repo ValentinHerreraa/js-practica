@@ -1,4 +1,4 @@
-let cadenaxx = "cadena de prueba para ver los distintos operadores de prueba";
+/*let cadenaxx = "cadena de prueba para ver los distintos operadores de prueba";
 let resultadooo = cadenaxx.concat(" hola");
 console.log(resultadooo);
 
@@ -449,7 +449,32 @@ console.log(frk);
 //*Number(): sirve para cambiar de tipo de dato a number.
 let frase12 = "2345";
 let frl = Number(frase12);
-console.log(typeof frl);
+console.log(typeof frl);*/
 
+//!REPASAR NUEVAMENTE LOS METODOS DE CADENA Y ARRAYS.
+//trim(): saca los espacios del principio y del final, trimEnd() los del final, trimStart() los del principio
+let frase20 = "    Javascript es genial   ";
+console.log(frase20.trim());
+
+//slice(): vos le decis desde que indice hasta que indice tiene que ir, asi es mas facil conseguir alguna palabra. que uno quiera.
+let frase21 = "aprender javascript es divertido";
+console.log(frase21.slice(9, 19));
+
+//toLocaleUpperCase: convierte un string a todo mayuscula.
+let frase23 = "me gusta programar";
+console.log(frase23.toLocaleUpperCase());
+
+//length: cuanta la longitud de una palabra, array, objeto, de todo, es un metodo de longitud.
+let frase24 = "deasrrollo";
+console.log(frase24.length);
+
+//includes(): verifica si una palabra existe o no en un string.
+let frase25 = "frontend developer";
+console.log(frase25.includes("developer"));
+
+//splice: funciona en arrays y sirve para modificar elementos en un arrays.
+let frase26 = ["el", "codigo", "es", "malo"];
+console.log(frase26.splice (3, 1, "bueno"));
+console.log(frase26);
 
 

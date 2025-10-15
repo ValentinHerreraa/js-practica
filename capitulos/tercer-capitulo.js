@@ -367,3 +367,101 @@ algoNuevo.arr.forEach((elemento) => {
     console.log(elemento + "jaja");
 });
 //elemnto lo que hace es que toma cada valor del array, es decir, no toma el indice pero si toma el valor de cada uno de los elementos.
+
+//!Ejercicios de clases, volviendo a retomar.
+class persona{
+    constructor(nombre, edad){
+        this.nombre = nombre;
+        this.edad = edad;
+        this.info = `Hola, soy ${this.nombre} y tengo ${this.edad} anos.`;
+    }
+    presentar(){
+        console.log(this.info);
+    }
+}
+const presentacionUno = new persona("valen", 18);
+presentacionUno.presentar();
+
+class producto{
+    constructor(nombre, precio){
+        this.nombre = nombre;
+        this.precio = precio;
+        this.info = `te llevas una/un ${this.nombre} y te sale ${this.precio}`;
+    }
+    aplicarDescuento(porcentaje){
+        let aplicar = porcentaje * this.precio / 100;
+        let final = this.precio - aplicar ;
+        console.log(`${this.info}.
+            Con el descuento te queda en: ${final}` );
+    }
+}
+const productoUno = new producto("leche", 1500);
+productoUno.aplicarDescuento(10);
+
+class auto{
+    constuctor(velocidad){
+        this.velocidad = velocidad;
+    }
+    acelerar(){
+        console.log(`Vas a ${this.velocidad}/km
+            Ahora como lo aceleraste vas a: ${this.velocidad + 10}`);
+    }
+    frenar(){
+        console.log(this.velocidad - 20);
+    }
+}
+const autoUno = new auto(120);
+autoUno.frenar();
+
+class cuentaBancaria{
+    #saldo;
+    constructor(depositar, retirar, saldo){
+        this.depositar = depositar;
+        this.retirar = retirar;
+        this.#saldo = saldo;
+    }
+    depositarPlata(){
+        console.log(`Depositaste: ${this.depositar}.`);
+    }
+    retirarPlata(){
+        console.log(`Retiraste: ${this.retirar}.`);
+    }
+    get verSaldo(){
+        return console.log(`Ahora tu saldo es de: ${this.#saldo + this.depositar - this.retirar}`);
+    }
+}
+const nuevaCuentaBancaria = new cuentaBancaria(300, 1000, 2500);
+nuevaCuentaBancaria.depositarPlata();
+nuevaCuentaBancaria.retirarPlata();
+nuevaCuentaBancaria.verSaldo;
+
+class animales{
+    constructor(especie){
+        this.especie = especie;
+    }
+        hacerSonido(){
+            if(this.especie === "perro"){
+                console.log("WAW");
+            } else if(this.especie === "gato"){
+                console.log("MIAU");
+            }
+        }
+}
+class perroYGato extends animales{
+    constructor(especie){
+        super(especie);
+    }
+    hacerSonido(){
+        super.hacerSonido();
+        console.log("Soy un perro muy feliz.");
+    }
+    maullar(){
+        if(this.especie === "gato"){
+            console.log("MIAU");
+        }
+    }
+}
+const sonidoUno = new animales("gato");
+sonidoUno.hacerSonido();
+const sonidoDos = new perroYGato("perro");
+sonidoDos.maullar();
