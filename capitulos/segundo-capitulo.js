@@ -238,7 +238,7 @@ function otro (){
 }
 otro();
 
-let arreglo = [];
+/*let arreglo = [];
 let ramdom = 3;
 
 let ing = prompt("Ingresa 3 nombres: ");
@@ -246,4 +246,51 @@ let ing = prompt("Ingresa 3 nombres: ");
 for(let i = 0; i < ramdom; i++){
     let nombresIngresados = arreglo.push(ing);
     alert(`Los nombres que ingresaste son: ${nombresIngresados}`);
+}*/
+
+//! 10 ejercicios de bucles.
+//1
+let numeroUno = 0;
+while(numeroUno <= 10){
+    numeroUno++;
+    console.log(numeroUno);
+}
+
+//2
+for(let i = 1; i <+ 20; i++){
+    if(i % 2 == 0){
+        console.log(i);
+    }
+}
+
+//3
+let datosPersona = [
+    {nombre: "valentin", edad: 20, ciudad: "campana"}
+];
+for(let i = 0; i < datosPersona.length; i++){
+    console.log(datosPersona[i]);
+}
+
+//4
+let frutasVarias = ["manzana", "banana", "pera"];
+for(let frutaVaria of frutasVarias){
+    console.log(frutaVaria);
+}
+
+//5
+let sumaUno = 0;
+for(let i = 1; i <= 100; i++){ 
+    sumaUno += 1;
+};
+console.log(sumaUno);
+
+//6
+let numeroTabla = 5;
+while(numeroTabla <= 50){
+    numeroTabla++;
+    numeroTabla++;
+    numeroTabla++;
+    numeroTabla++;
+    numeroTabla++;
+    console.log(numeroTabla);
 }
